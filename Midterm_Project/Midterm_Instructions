@@ -1,0 +1,51 @@
+Q1    												       
+You may use either the local functions, or the dplyr / data.table packages to perform the following actions (do NOT use any other package for computations – for graphing, use any package):
+
+File Provided: 	exam1quality.xls
+
+1.	Create a data.frame object named airQ from the  excel file (given).
+				 							(3 pts)
+ 
+2.	Sort the data by the Wind column. 						   	(2pts)
+
+3.	For each Temp reading in the original exam1quality data, create a plot of Temp against Ozone only if (Temp>=60). In case where the Ozone reading is not available, do NOT plot that Temp-Ozone pairing. Ensure that all the plots are on the same axis and include a suitable title that indicates the month—for example, “Ozone against Temp for Month X.”		(15 pts)
+
+4.	Create a subset of the original exam1quality data containing just three columns: Month, Day, and Solar.R. The data should only contain data for June and July. Create a new .txt file named solar, and put the data in it.							(10 pts)
+
+
+
+
+
+
+
+Q2   												      
+
+File Provided: 	CarPerformance.csv
+This file has 234 rows and 11 variables. Variable details are:
+ 
+
+You may use either the local R functions, or the dplyr / data.table packages to perform the required computations (do NOT use any other package for computations – for graphing, use any package. I use ggplot2):
+1.	Create a function called CarPFunction that will take CarP as input and store (on separate lines – tab-delimited) the make, model, and year of the cars that do more than 20 gallons in the city, in a file called CarPSubset.txt. Show screenshot of the file contents. NO need to submit the .txt file.																					(10 pts)
+
+2.	Find the average miles per gallon (city and highway both – listed separately) for each car model.  										(10 pts)
+
+3.	List the car manufacturer name against the cyl that occurs most in the given dataset. For instance, audi  6, since in the dataset it has nine 6 cylinder cars, eight 4 cylinder and one 8 cyl.
+
+(10 pts)
+
+
+
+
+
+Q3   												      
+In this question you will create a simplified cash register. 
+Use the runif function to generate a float (i.e. with or without the decimal) random number between 1 and 90 (let’s call this amount). A customer owes this amount, show the amount to the user. Take the input from the keyboard for the customer to pay this amount. 
+Customer will hand you (input) some money in an integer denomination greater than the amount. For example, if the amount is $44.37, the customer hands you 50 or 60 or 70 greater (up to 100). If the amount given is the exact amount, then you should tell them that no change is owed. Otherwise, you should calculate the number of each denomination to give them back in their change. The denominations available are dollars (1.00), quarters (0.25), dimes (0.10), and nickels (0.05). A penny should be rounded up to the nearest nickel. Once you have calculated the change you should tell the customer how much change you have given them.
+In order to keep your customer happy, you should always give them the fewest coins possible, do not simply give them back all their change in nickels. You are expected to use meaningful variable names and comment any code you feel requires explanation.
+
+Example case:
+Random Amount  - $44.39
+User Gives (keyboard input) - $60
+Change = 60 – 44.37 = $15.61
+
+Fewest denomination change is:  15 Dollars, 2 Quarters, 1 Dime , 1 Nickel    (the 1 cent is rounded up to a nickel)
